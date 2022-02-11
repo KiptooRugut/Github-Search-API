@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DisplayComponent } from './display/display.component';
 import { FormComponent } from './form/form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TimeCountPipe } from './time-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayComponent,
     FormComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TimeCountPipe
   ],
   imports: [
     BrowserModule,
