@@ -8,7 +8,6 @@ import { FormComponent } from './form/form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TimeCountPipe } from './time-count.pipe';
 import { ColorDirective } from './color.directive';
-import { NavbarComponent } from './navbar/navbar.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import {SearchGithubService} from './search-github/search-github.service';
