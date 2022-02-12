@@ -10,6 +10,9 @@ import { TimeCountPipe } from './time-count.pipe';
 import { ColorDirective } from './color.directive';
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import {SearchGithubService} from './search-github/search-github.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +21,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     NotFoundComponent,
     TimeCountPipe,
     ColorDirective,
-    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SearchGithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
