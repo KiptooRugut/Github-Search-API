@@ -8,6 +8,7 @@ import { FormComponent } from './form/form.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TimeCountPipe } from './time-count.pipe';
 import { ColorDirective } from './color.directive';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ColorDirective } from './color.directive';
     FormComponent,
     NotFoundComponent,
     TimeCountPipe,
-    ColorDirective
+    ColorDirective,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
