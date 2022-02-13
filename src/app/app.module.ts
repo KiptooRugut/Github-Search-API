@@ -10,7 +10,7 @@ import { TimeCountPipe } from './time-count.pipe';
 import { ColorDirective } from './color.directive';
 
 import { HttpClientModule } from '@angular/common/http';
-import {SearchGithubService} from './search-github/search-github.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,9 +24,11 @@ import {SearchGithubService} from './search-github/search-github.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
-  providers: [SearchGithubService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
