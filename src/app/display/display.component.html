@@ -1,1 +1,23 @@
-<p>display works!</p>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div *ngFor='let repositoryDetail of repositoryDetails'>
+            <div class="col-md-12">
+                <div class="card-group">
+                    <div class="card p-3 mb-2 bg-secondary text-white">
+                        <h5 appColor class="card-title">{{repositoryDetail.name}}</h5>
+                        <p class="card-text">{{repositoryDetail.description}}</p>
+                        <p class="card-text">Language used is {{repositoryDetail.language}}</p>
+                        <p class="card-text"><a href="{{repositoryDetail.html_url}}" class="link-info">Visit</a> the project repository
+                        </p>
+                        <p class="card-text"><small class="text-light">Created on
+                                {{repositoryDetail.created_at|date}}</small>
+                        </p>
+                        <p class="card-text"><small class="text-light">Updated on
+                                {{repositoryDetail.updated_at|date}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
