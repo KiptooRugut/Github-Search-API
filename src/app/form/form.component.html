@@ -1,1 +1,14 @@
-<p>form works!</p>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,600&family=Lato&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+<div class="row">
+    <div class="col-md-5 text-center">
+        <div class="form">
+            <h4>Provide a GitHub username to search</h4>
+            <form (ngSubmit)='submitForm()' #form='ngForm' name="form">
+                <input type="text" name="username" id="username" class="form-control" [(ngModel)]="username" placeholder="GitHub username">
+                <button id="search" type="submit" class="btn btn-lg btn-outline-success">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
