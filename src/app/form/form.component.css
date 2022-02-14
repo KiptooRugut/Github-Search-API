@@ -1,7 +1,25 @@
 #search {
     margin: 1rem;
+    color: aliceblue;
+    font-weight: bold;
 }
 
 .btn-info {
     color: aliceblue;
+}
+
+#username {
+    height: 50px;
+}
+
+#alt {
+    font-size: 20px;
+    font-weight: bold;
+    top: 8%;
+    margin: 10px;
+}
+
+#border {
+    height: 500px;
+    background-image: url();
 }
