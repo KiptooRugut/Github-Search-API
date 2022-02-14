@@ -10,6 +10,7 @@ import { TimeCountPipe } from './time-count.pipe';
 import { ColorDirective } from './color.directive';
 
 import { HttpClientModule } from '@angular/common/http';
+import {SearchGithubService} from './search-github/search-github.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -28,7 +29,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [SearchGithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
